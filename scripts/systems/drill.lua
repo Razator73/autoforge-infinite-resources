@@ -136,7 +136,7 @@ function DrillSystem.prototype.dispense(self, drill, entity)
     local backwall = World:get(entity.location.realm).backwall.map
     local tile = backwall:get(drill.position)
     if tile.quantity > 1 then
-        backwall:setQuantity(drill.position, tile.quantity - 1)
+        backwall:setQuantity(drill.position, tile.quantity)
     else
         backwall:set(drill.position, self._soilId, 1)
         if self:calculateRemainingQuantity(entity) == 0 then
