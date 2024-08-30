@@ -1,6 +1,6 @@
 # Infinite Resources
 
-### Autoforge 0.2.15
+### Autoforge 0.3.0
 
 <br>
 
